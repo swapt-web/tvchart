@@ -1,0 +1,141 @@
+@font-face{
+	font-family: bookman;
+	src: url(./bookman.TTF);
+}
+@font-face{
+	font-family: bookman;
+	src: url(./bookman_bold.TTF);
+	font-weight: bolder;
+}
+@font-face{
+	font-family: bookman;
+	src: url(./bookman_italic.TTF);
+	font-style: italic;
+}
+@font-face{
+	font-family: bookman;
+	src: url(./bookman_bold_italic.TTF);
+	font-weight: bolder;
+	font-style: italic;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	background-color: black;
+	color: white;
+	font-family: bookman;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bolder;
+}
+#chart {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+#chart .header {
+	width: 92%;
+	height: 6%;
+	border-bottom: 1px solid white;
+	position: absolute;
+	margin-left: 4%;
+}
+#chart .draw {
+	height: 100%;
+	width: 4%;
+	border-right: 3px solid white;
+}
+#chart .body {
+	margin-top: -41.09%;
+	width: 92%;
+	height: 87%;
+	margin-left: 4.25%;
+}
+#chart .feature {
+	width: 4%;
+	height: 93%;
+	margin-top: -41.1%;
+	margin-left: 96%;
+	border-left: 3px solid white;
+}
+#chart .footer {
+	width: 96%;
+	height: 8%;
+	margin-top: 0%;
+	border-top: 3px solid white;
+	margin-left: 4%;
+}
+#chart .header .name {
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 7px;
+	position: fixed;
+	border-right: 1px solid #fff;
+	height: 4.9%;
+	padding-right: 10px;
+	cursor: pointer;
+}
+#chart .header .name:hover {
+	background-color: #0c5af5;
+	border-left: 3px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding-left: 7px;
+	color: #96f00e;
+}
+#chart .header .interval {
+	height: 5%;
+	position: fixed;
+	border-right: 1px solid #fff;
+	width: 185px;
+	font-size: 18px;
+	padding-top: 7px;
+	padding-left: 5px;
+}
+#chart .header .interval label {
+	display: inline-block;
+	padding-left: 7px;
+	padding-right: 7px;
+	cursor: pointer;
+}
+#chart .header .interval label:hover {
+	background-color: #0c5af5;
+	color: #96f00e;
+	border-radius: 5px;
+}
+#chart .header .interval .down {
+    cursor: pointer;
+    width: 23px;
+    padding-left: 5px;
+    margin-top: 4px;
+    position: absolute;
+}
+#chart .header .interval .down path {
+	fill: white;
+	stroke: white;
+}
+#chart .header .interval .down:hover > path {
+    fill: #00abff;
+    stroke: #00abff;
+}
+#chart .header .chartype {
+    width: 21px;
+    position: fixed;
+    border-right: 1px solid #fff;
+    height: 6%;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+#chart .header .chartype:hover {
+    background-color: #0c5af5;
+}
+#chart .header .chartype svg path {
+	fill: white;
+	stroke: white;
+}
+#chart .header .chartype:hover > svg path {
+	fill: #96f00e;
+	stroke: #96f00e;
+}
