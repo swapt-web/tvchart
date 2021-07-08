@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TV CHART</title>
+	<script type="text/javascript" src="./Src/jquery.min.js"></script>
+	<script type="text/javascript" src="./Src/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./Dist/chart.prefrences.js"></script>
+	<script type="text/javascript" src="./Dist/chart.pips.js"></script>
+	<script type="text/javascript" src="./Dist/chart.module.js"></script>
+	<link rel="stylesheet" type="text/css" href="./Dist/chart.pips.css">
+	<link rel="stylesheet" type="text/css" href="./Src/jquery-ui.css">
+</head>
+<body>
+	<div id='chart'></div>
+	<script type="text/javascript">
+		const chart=tvchart.createChart();
+		chart.symbol({
+			name:'RELIANCE',
+			exchange:'NSE'
+		});
+	</script>
+</body>
+</html>
